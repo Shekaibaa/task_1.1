@@ -1,0 +1,93 @@
+body {
+    background-image: url(goat4.jpg);
+    image-orientation:180deg ;
+    background-repeat: no-repeat ;
+    background-size: 910px;
+    margin-top: 20px;
+    background-position: -100px 80px;
+    
+}
+
+.header{background-color: transparent ;
+    font-size: 80px;
+    font-weight: 600;
+    background-size: 250px;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 0px 5px #e6b566,0px 0px 10px #fab476, 0px 0px 10px #df924e,0px 0px 20px #fbfbfb;
+
+    animation-name: slidein;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+
+.image-effect figure img{
+    -webkit-filter: blur(10);
+	filter: blur(10);
+	-webkit-transition: .3s ease-in-out;
+	transition: .5s ease-in-out;
+    animation-direction: reverse;
+}
+
+.image-effect figure:Hover img{-webkit-filter: blur(3px);
+	filter: blur(3px);
+}
+
+
+.btn-effect{color: rgb(91, 59, 11);
+        border: 1px ;
+        background-color: #f6d9a7;
+        border-style:double;
+        border-radius: 3px;
+        transition-duration: 0.2s;
+}
+
+.same-line{
+    display: inline-block;
+}
+
+.btn-effect:hover{
+    transform:scale(1.05);
+    background-color: #e6b566;
+    color: var(#ffffff);
+}
+
+.frame-text{
+    position: absolute;
+    top: 250px;
+    left: 700px;
+    text-align: center;
+}
+
+.joke-position{
+    position: absolute;
+    top: 550px;
+    left: 750px;
+    text-align: center;
+
+}
+
+
+
+
+@keyframes slidein {
+    from {
+        text-shadow:0px 0px 5px #e6c86c,0px 0px 10px #fab476, 0px 0px 10px #df924e,0px 0px 20px #fbfbfb;
+    }
+
+    to {
+        text-shadow:0px 0px 5px #d8c7ab,0px 0px 10px #82b0e9, 0px 0px 10px #d7b291,0px 0px 20px #3e85e1;
+    }
+
+    to {
+        text-shadow:0px 0px 5px #fce533,0px 0px 10px #4c6bea, 0px 0px 10px #d7b291,0px 0px 20px #f8d9d9;
+    }
+
+    to {
+        text-shadow:0px 0px 5px #ffd22f,0px 0px 10px #f7d2b1, 0px 0px 10px #286baa,0px 0px 20px #f8d9d9;
+    }
+    
+}
